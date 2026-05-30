@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import Examples from "@/components/Examples";
-import Features from "@/components/Features";
+// import Features from "@/components/Features";
 import Business from "@/components/Business";
 import FreeSection from "@/components/FreeSection";
 import FAQ from "@/components/FAQ";
@@ -17,7 +17,7 @@ export default function Home() {
         <Hero />
         <HowItWorks />
         <Examples />
-        <Features />
+        {/* <Features /> */}
         <Business />
         <FreeSection />
         <FAQ />
