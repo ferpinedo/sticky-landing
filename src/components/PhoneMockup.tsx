@@ -64,17 +64,16 @@ export default function PhoneMockup() {
               <div
                 className="wa-avatar"
                 style={{
-                  padding: 4,
+                  background: "#000",
                   overflow: "hidden",
-                  background: "#1a1a1a",
                 }}
               >
                 <Image
-                  src="/sticky-logo.png"
+                  src="/sticky-logo-sticker.png"
                   alt="Sticky"
-                  width={28}
-                  height={28}
-                  style={{ objectFit: "contain" }}
+                  width={36}
+                  height={36}
+                  style={{ objectFit: "cover" }}
                 />
               </div>
               <div style={{ flex: 1 }}>

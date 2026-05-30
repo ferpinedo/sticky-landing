@@ -52,13 +52,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full">
         {/* Two-column layout via CSS media query workaround with flex-wrap */}
         <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: 48,
-            alignItems: "center",
-            justifyContent: "space-between",
-          }}
+          className="flex flex-wrap items-center justify-between gap-y-20 md:gap-12"
         >
           {/* Copy */}
           <div style={{ flex: "1 1 min(100%, 580px)" }}>
