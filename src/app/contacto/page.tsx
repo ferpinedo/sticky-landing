@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const WA_LINK =
-  "https://wa.me/1234567890?text=Hola%20Sticky%2C%20tengo%20una%20pregunta";
+  "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
 
 export default function Contacto() {
   return (
