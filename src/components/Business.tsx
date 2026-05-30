@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const WA_LINK = "https://wa.me/525586444339?text=Haz%20un%20sticker%20para%20mi%20negocio%20que%20";
 
 const businessCards = [
@@ -150,85 +152,59 @@ export default function Business() {
             </a>
           </div>
 
-          {/* Visual — logo becoming sticker */}
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              gap: 16,
-              flexWrap: "wrap",
-            }}
-          >
-            {/* Before */}
+          {/* Visual — mini WhatsApp chat */}
+          <div style={{ display: "flex", justifyContent: "center" }}>
             <div
               style={{
-                background: "#1E1E1E",
-                border: "1px solid #2A2A2A",
+                background: "#0d1418",
                 borderRadius: 20,
-                padding: 28,
-                textAlign: "center",
-                width: 160,
+                overflow: "hidden",
+                width: 280,
+                boxShadow: "0 0 0 1px #2A2A2A, 0 24px 60px rgba(0,0,0,0.5)",
               }}
             >
-              <div style={{ fontSize: 48, marginBottom: 10 }}>🏪</div>
-              <div
-                style={{
-                  fontSize: 20,
-                  fontWeight: 900,
-                  color: "#888",
-                  letterSpacing: "0.05em",
-                }}
-              >
-                MI NEGOCIO
-              </div>
-              <div style={{ fontSize: 11, color: "#555", marginTop: 8 }}>
-                tu logo
-              </div>
-            </div>
-
-            {/* Arrow */}
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                fontSize: 28,
-                color: "#FF8100",
-              }}
-            >
-              →
-            </div>
-
-            {/* After (sticker style) */}
-            <div
-              style={{
-                background: "white",
-                borderRadius: 20,
-                padding: 6,
-                boxShadow: "0 0 0 3px #FF8100, 0 12px 40px rgba(0,0,0,0.5)",
-                transform: "rotate(3deg)",
-              }}
-            >
-              <div
-                style={{
-                  background: "#FFF8F0",
-                  borderRadius: 16,
-                  padding: "20px 24px",
-                  textAlign: "center",
-                  width: 160,
-                }}
-              >
-                <div style={{ fontSize: 48 }}>🏪</div>
-                <div
-                  style={{
-                    fontSize: 18,
-                    fontWeight: 900,
-                    color: "#FF8100",
-                    letterSpacing: "0.05em",
-                    marginTop: 4,
-                  }}
-                >
-                  MI NEGOCIO
+              {/* Mini WA header */}
+              <div style={{ background: "#1f2c34", padding: "10px 14px", display: "flex", alignItems: "center", gap: 10 }}>
+                <Image src="/sticky-logo.png" alt="Sticky" width={32} height={32} style={{ borderRadius: "50%", background: "#1a1a1a", padding: 3, objectFit: "contain" }} />
+                <div>
+                  <div style={{ fontSize: 13, fontWeight: 600, color: "#e9edef" }}>Sticky ✦</div>
+                  <div style={{ fontSize: 11, color: "#8696a0" }}>en línea</div>
                 </div>
+              </div>
+
+              {/* Messages */}
+              <div style={{ padding: "12px 10px", display: "flex", flexDirection: "column", gap: 8, background: "#0d1418" }}>
+
+                {/* User sends logo */}
+                <div style={{ alignSelf: "flex-end", fontSize: 12, color: "#e9edef", background: "#005c4b", padding: "6px 10px", borderRadius: "8px 8px 2px 8px", maxWidth: "78%" }}>
+                  Mira, este es el logo de mi empresa 👆
+                </div>
+
+                {/* Logo image bubble */}
+                <div style={{ alignSelf: "flex-end", borderRadius: 10, overflow: "hidden", width: 110, height: 110, background: "#1f2c34", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <Image src="/stickers/quentli-logo.png" alt="Logo Quentli" width={100} height={100} style={{ objectFit: "contain" }} />
+                </div>
+
+                {/* Sticky reply */}
+                <div style={{ alignSelf: "flex-start", fontSize: 12, color: "#e9edef", background: "#202c33", padding: "6px 10px", borderRadius: "8px 8px 8px 2px", maxWidth: "78%" }}>
+                  ¡Qué buen logo! Ya lo convierto en sticker 🧡
+                </div>
+
+                {/* Sticker result */}
+                <div style={{ alignSelf: "flex-start" }}>
+                  <Image
+                    src="/stickers/quentli-sticker.webp"
+                    alt="Sticker Quentli"
+                    width={130}
+                    height={130}
+                    style={{ filter: "drop-shadow(0 4px 14px rgba(0,0,0,0.6))", display: "block" }}
+                  />
+                </div>
+
+                <div style={{ alignSelf: "flex-start", fontSize: 12, color: "#e9edef", background: "#202c33", padding: "6px 10px", borderRadius: "8px 8px 8px 2px", maxWidth: "78%" }}>
+                  Listo ✅ ¿Le agrego texto o lo dejamos así?
+                </div>
+
               </div>
             </div>
           </div>
