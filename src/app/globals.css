@@ -222,6 +222,12 @@ body {
   color: #8696a0;
 }
 
+/* Typing dots animation */
+@keyframes typingDot {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30%            { transform: translateY(-4px); opacity: 1; }
+}
+
 /* Bubble animation */
 @keyframes bubbleIn {
   from { opacity: 0; transform: translateY(8px) scale(0.95); }
