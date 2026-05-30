@@ -8,10 +8,8 @@ export const metadata: Metadata = {
   description: "Comunícate con el equipo de Sticky.",
 };
 
-const WA_LINK_PREGUNTA =
-  "https://wa.me/525586444339?text=Hola%20Sticky%2C%20tengo%20una%20pregunta%3A%20";
-const WA_LINK_CREAR =
-  "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
+const WA_LINK_PREGUNTA = "https://wa.me/525586444339?text=Hola";
+const WA_LINK_CREAR = "https://wa.me/525586444339?text=Hola";
 
 export default function Contacto() {
   return (

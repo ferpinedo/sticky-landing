@@ -1,5 +1,5 @@
 const WA_LINK =
-  "https://wa.me/525586444339?text=Quiero%20crear%20mi%20primer%20sticker%2C%20hazme%20uno%20que%20";
+  "https://wa.me/525586444339?text=Hola";
 
 export default function FinalCTA() {
   return (

@@ -1,4 +1,5 @@
-const WA_LINK = "https://wa.me/525586444339?text=Quiero%20probar%20Sticky%2C%20hazme%20un%20sticker%20que%20";
+const WA_LINK =
+  "https://wa.me/525586444339?text=Hola";
 
 export default function FreeSection() {
   return (

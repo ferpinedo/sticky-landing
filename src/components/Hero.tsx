@@ -1,6 +1,6 @@
 import PhoneMockup from "./PhoneMockup";
 
-const WA_LINK = "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
+const WA_LINK = "https://wa.me/525586444339?text=Hola";
 
 export default function Hero() {
   return (
@@ -51,9 +51,7 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full">
         {/* Two-column layout via CSS media query workaround with flex-wrap */}
-        <div
-          className="flex flex-wrap items-center justify-between gap-y-20 md:gap-12"
-        >
+        <div className="flex flex-wrap items-center justify-between gap-y-20 md:gap-12">
           {/* Copy */}
           <div style={{ flex: "1 1 min(100%, 580px)" }}>
             {/* <div className="section-tag">✦ Powered by AI</div> */}

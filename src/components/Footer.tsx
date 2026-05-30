@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const WA_LINK = "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
+const WA_LINK = "https://wa.me/525586444339?text=Hola";
 
 const navLinks = [
   { href: "/", label: "Inicio" },
