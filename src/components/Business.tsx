@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const WA_LINK =
   "https://wa.me/525586444339?text=Haz%20un%20sticker%20para%20mi%20negocio%20que%20";
 
@@ -171,17 +173,18 @@ export default function Business() {
                 width: 160,
               }}
             >
-              <div style={{ fontSize: 48, marginBottom: 10 }}>🏪</div>
-              <div
+              <Image
+                src="/stickers/quentli-logo.png"
+                alt="Logo Quentli"
+                width={80}
+                height={80}
                 style={{
-                  fontSize: 20,
-                  fontWeight: 900,
-                  color: "#888",
-                  letterSpacing: "0.05em",
+                  borderRadius: 16,
+                  marginBottom: 10,
+                  display: "block",
+                  marginInline: "auto",
                 }}
-              >
-                MI NEGOCIO
-              </div>
+              />
               <div style={{ fontSize: 11, color: "#555", marginTop: 8 }}>
                 Tu logo
               </div>
@@ -202,35 +205,20 @@ export default function Business() {
             {/* After (sticker style) */}
             <div
               style={{
-                background: "white",
-                borderRadius: 20,
-                padding: 6,
-                boxShadow: "0 0 0 3px #FF8100, 0 12px 40px rgba(0,0,0,0.5)",
                 transform: "rotate(3deg)",
+                filter: "drop-shadow(0 12px 40px rgba(0,0,0,0.5))",
               }}
             >
-              <div
+              <Image
+                src="/stickers/quentli-sticker.webp"
+                alt="Sticker Quentli"
+                width={160}
+                height={160}
                 style={{
-                  background: "#FFF8F0",
-                  borderRadius: 16,
-                  padding: "20px 24px",
-                  textAlign: "center",
-                  width: 160,
+                  borderRadius: 12,
+                  display: "block",
                 }}
-              >
-                <div style={{ fontSize: 48 }}>🏪</div>
-                <div
-                  style={{
-                    fontSize: 18,
-                    fontWeight: 900,
-                    color: "#FF8100",
-                    letterSpacing: "0.05em",
-                    marginTop: 4,
-                  }}
-                >
-                  MI NEGOCIO
-                </div>
-              </div>
+              />
             </div>
           </div>
         </div>
