@@ -1,23 +1,29 @@
+import {
+  CameraIcon,
+  ChatBubbleLeftRightIcon,
+  SparklesIcon,
+} from "@heroicons/react/24/solid";
+
 const steps = [
   {
     number: "01",
-    emoji: "💬",
+    icon: ChatBubbleLeftRightIcon,
     title: "Escríbele a Sticky",
     desc: "Busca a Sticky en WhatsApp y empieza a chatear. No necesitas descargar nada ni crear una cuenta.",
   },
   {
     number: "02",
-    emoji: "📸",
+    icon: CameraIcon,
     title: "Mándale una idea, foto o sticker",
     desc: "Describe lo que quieres, sube una foto, o mándale un sticker existente para editarlo. Sticky entiende todo.",
   },
   {
     number: "03",
-    emoji: "✨",
+    icon: SparklesIcon,
     title: "Recibe tu sticker al instante",
     desc: "En segundos recibirás tu sticker listo para usar y compartir. Sin esperas, sin complicaciones.",
   },
-];
+] as const;
 
 export default function HowItWorks() {
   return (
@@ -61,9 +67,9 @@ export default function HowItWorks() {
             gap: 24,
           }}
         >
-          {steps.map((step, i) => (
+          {steps.map(({ icon: Icon, number, title, desc }) => (
             <div
-              key={i}
+              key={number}
               className="feature-card"
               style={{
                 background: "#1E1E1E",
@@ -87,7 +93,7 @@ export default function HowItWorks() {
                   userSelect: "none",
                 }}
               >
-                {step.number}
+                {number}
               </div>
 
               <div
@@ -100,11 +106,17 @@ export default function HowItWorks() {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  fontSize: 28,
                   marginBottom: 20,
                 }}
               >
-                {step.emoji}
+                <Icon
+                  aria-hidden
+                  style={{
+                    width: 28,
+                    height: 28,
+                    color: "#FF8100",
+                  }}
+                />
               </div>
 
               <div
@@ -117,7 +129,7 @@ export default function HowItWorks() {
                   marginBottom: 8,
                 }}
               >
-                Paso {step.number}
+                Paso {number}
               </div>
 
               <h3
@@ -129,11 +141,11 @@ export default function HowItWorks() {
                   lineHeight: 1.1,
                 }}
               >
-                {step.title}
+                {title}
               </h3>
 
               <p style={{ fontSize: 15, color: "#888", lineHeight: 1.6 }}>
-                {step.desc}
+                {desc}
               </p>
 
               {/* Bottom orange line */}
