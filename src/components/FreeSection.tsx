@@ -1,5 +1,4 @@
-const WA_LINK =
-  "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
+const WA_LINK = "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
 
 export default function FreeSection() {
   return (
@@ -14,10 +13,21 @@ export default function FreeSection() {
     >
       <div
         className="spray-circle"
-        style={{ width: 600, height: 600, background: "#FF8100", top: "50%", left: "50%", transform: "translate(-50%,-50%)", opacity: 0.06 }}
+        style={{
+          width: 600,
+          height: 600,
+          background: "#FF8100",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%,-50%)",
+          opacity: 0.06,
+        }}
       />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6" style={{ textAlign: "center" }}>
+      <div
+        className="max-w-4xl mx-auto px-4 sm:px-6"
+        style={{ textAlign: "center" }}
+      >
         <div className="section-tag">Sin costo</div>
 
         <h2
@@ -64,10 +74,19 @@ export default function FreeSection() {
           }}
         >
           Crea stickers con AI sin pagar y sin instalar otra app.{" "}
-          <strong style={{ color: "#F5F5F5" }}>Solo abre WhatsApp y escríbele a Sticky.</strong>
+          <strong style={{ color: "#F5F5F5" }}>
+            Solo abre WhatsApp y escríbele a Sticky.
+          </strong>
         </p>
 
-        <div style={{ display: "flex", gap: 14, flexWrap: "wrap", justifyContent: "center" }}>
+        <div
+          style={{
+            display: "flex",
+            gap: 14,
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
           <a
             href={WA_LINK}
             target="_blank"
@@ -75,13 +94,21 @@ export default function FreeSection() {
             className="btn-orange animate-glow-pulse"
             style={{ fontSize: 16, padding: "16px 32px" }}
           >
-            <span>✦</span>
+            {/* <span>✦</span> */}
             Probar Sticky gratis
           </a>
         </div>
 
         {/* Feature pills */}
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginTop: 36 }}>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 10,
+            justifyContent: "center",
+            marginTop: 36,
+          }}
+        >
           {[
             "✅ Sin tarjeta de crédito",
             "✅ Sin registro",
