@@ -1,13 +1,14 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Aviso de Privacidad — Sticky",
+export const metadata = createPageMetadata({
+  title: "Aviso de Privacidad",
   description:
     "Aviso de privacidad de Sticky, el asistente de WhatsApp para crear stickers con AI.",
-};
+  path: "/aviso-de-privacidad",
+});
 
 export default function AvisoDePrivacidad() {
   return (

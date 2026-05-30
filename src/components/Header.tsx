@@ -3,7 +3,9 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const WA_LINK = "https://wa.me/525586444339?text=Hola";
+import { whatsappLink } from "@/lib/whatsapp";
+
+const WA_LINK = whatsappLink("Hola");
 
 const navLinks = [
   { href: "/#como-funciona", label: "Cómo funciona" },

@@ -5,6 +5,7 @@ import {
   SparklesIcon,
 } from "@heroicons/react/24/outline";
 import PhoneMockup from "./PhoneMockup";
+import { whatsappLink } from "@/lib/whatsapp";
 
 const featurePills = [
   { icon: BoltIcon, label: "En segundos" },
@@ -13,7 +14,7 @@ const featurePills = [
   { icon: GiftIcon, label: "Sin costo" },
 ] as const;
 
-const WA_LINK = "https://wa.me/525586444339?text=Hola";
+const WA_LINK = whatsappLink("Hola");
 
 export default function Hero() {
   return (

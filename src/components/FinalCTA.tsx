@@ -1,4 +1,6 @@
-const WA_LINK = "https://wa.me/525586444339?text=Hola";
+import { whatsappLink } from "@/lib/whatsapp";
+
+const WA_LINK = whatsappLink("Hola");
 
 export default function FinalCTA() {
   return (

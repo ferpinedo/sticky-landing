@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Bebas_Neue, Inter } from "next/font/google";
 import "./globals.css";
 
+import { defaultMetadata } from "@/lib/site";
+
 const bebasNeue = Bebas_Neue({
   weight: "400",
   variable: "--font-bebas",
@@ -15,18 +17,7 @@ const inter = Inter({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Sticky — Crea stickers para WhatsApp con AI",
-  description:
-    "Crea stickers para WhatsApp en segundos con inteligencia artificial. Manda una foto, describe tu idea o edita un sticker que ya tienes. Gratis, sin descargar otra app.",
-  openGraph: {
-    title: "Sticky — Crea stickers para WhatsApp con AI",
-    description:
-      "Crea stickers para WhatsApp en segundos con inteligencia artificial. Gratis, sin descargar otra app.",
-    type: "website",
-    images: ["/sticky-logo.png"],
-  },
-};
+export const metadata: Metadata = defaultMetadata;
 
 export default function RootLayout({
   children,
@@ -35,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="es"
+      lang="es-MX"
       className={`${bebasNeue.variable} ${inter.variable}`}
     >
       <body

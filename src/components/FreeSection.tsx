@@ -1,6 +1,8 @@
 import { CheckIcon } from "@heroicons/react/24/solid";
 
-const WA_LINK = "https://wa.me/525586444339?text=Hola";
+import { whatsappLink } from "@/lib/whatsapp";
+
+const WA_LINK = whatsappLink("Hola");
 
 const featurePills = [
   "Sin tarjeta de crédito",

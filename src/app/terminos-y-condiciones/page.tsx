@@ -1,13 +1,14 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Términos y Condiciones — Sticky",
+export const metadata = createPageMetadata({
+  title: "Términos y Condiciones",
   description:
     "Términos y condiciones de uso de Sticky, el asistente de WhatsApp para crear stickers con AI.",
-};
+  path: "/terminos-y-condiciones",
+});
 
 export default function TerminosYCondiciones() {
   return (

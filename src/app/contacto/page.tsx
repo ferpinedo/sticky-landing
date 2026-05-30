@@ -1,15 +1,18 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import type { Metadata } from "next";
+import { whatsappLink } from "@/lib/whatsapp";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Contacto — Sticky",
-  description: "Comunícate con el equipo de Sticky.",
-};
+export const metadata = createPageMetadata({
+  title: "Contacto",
+  description:
+    "Comunícate con el equipo de Sticky por WhatsApp o correo. Resolvemos dudas sobre stickers con AI.",
+  path: "/contacto",
+});
 
-const WA_LINK_PREGUNTA = "https://wa.me/525586444339?text=Hola";
-const WA_LINK_CREAR = "https://wa.me/525586444339?text=Hola";
+const WA_LINK_PREGUNTA = whatsappLink("Hola");
+const WA_LINK_CREAR = whatsappLink("Hola");
 
 export default function Contacto() {
   return (

@@ -6,8 +6,9 @@ import {
   TagIcon,
 } from "@heroicons/react/24/outline";
 
-const WA_LINK =
-  "https://wa.me/525586444339?text=Haz%20un%20sticker%20para%20mi%20negocio%20que%20";
+import { whatsappLink } from "@/lib/whatsapp";
+
+const WA_LINK = whatsappLink("Haz un sticker para mi negocio que ");
 
 const businessCards = [
   {
