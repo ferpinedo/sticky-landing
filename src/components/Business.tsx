@@ -1,5 +1,4 @@
-const WA_LINK =
-  "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
+const WA_LINK = "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
 
 const businessCards = [
   {
@@ -59,24 +58,54 @@ export default function Business() {
 
             <h2
               className="font-heading"
-              style={{ fontSize: "clamp(40px, 6vw, 80px)", color: "#F5F5F5", lineHeight: 0.95, marginBottom: 24 }}
+              style={{
+                fontSize: "clamp(40px, 6vw, 80px)",
+                color: "#F5F5F5",
+                lineHeight: 0.95,
+                marginBottom: 24,
+              }}
             >
               TU LOGO TAMBIÉN{" "}
               <span style={{ color: "#FF8100" }}>PUEDE SER UN STICKER</span>
             </h2>
 
-            <p style={{ fontSize: 17, color: "#AAA", lineHeight: 1.7, marginBottom: 20 }}>
-              Envíale tu logo a Sticky y conviértelo en un sticker listo para compartir con tus clientes.
+            <p
+              style={{
+                fontSize: 17,
+                color: "#AAA",
+                lineHeight: 1.7,
+                marginBottom: 20,
+              }}
+            >
+              Envíale tu logo a Sticky y conviértelo en un sticker listo para
+              compartir con tus clientes.
             </p>
 
-            <p style={{ fontSize: 17, color: "#AAA", lineHeight: 1.7, marginBottom: 36 }}>
+            <p
+              style={{
+                fontSize: 17,
+                color: "#AAA",
+                lineHeight: 1.7,
+                marginBottom: 36,
+              }}
+            >
               Un buen sticker puede ser{" "}
-              <strong style={{ color: "#F5F5F5" }}>la mejor publicidad para tu negocio:</strong>{" "}
-              tus clientes lo usan, lo mandan y tu marca viaja en cada conversación.
+              <strong style={{ color: "#F5F5F5" }}>
+                la mejor publicidad para tu negocio:
+              </strong>{" "}
+              tus clientes lo usan, lo mandan y tu marca viaja en cada
+              conversación.
             </p>
 
             {/* Business cards */}
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginBottom: 36 }}>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 12,
+                marginBottom: 36,
+              }}
+            >
               {businessCards.map((c, i) => (
                 <div
                   key={i}
@@ -94,7 +123,15 @@ export default function Business() {
                 >
                   <span style={{ fontSize: 22 }}>{c.emoji}</span>
                   <div>
-                    <div style={{ fontSize: 13, fontWeight: 700, color: "#F5F5F5" }}>{c.label}</div>
+                    <div
+                      style={{
+                        fontSize: 13,
+                        fontWeight: 700,
+                        color: "#F5F5F5",
+                      }}
+                    >
+                      {c.label}
+                    </div>
                     <div style={{ fontSize: 12, color: "#666" }}>{c.desc}</div>
                   </div>
                 </div>
@@ -108,13 +145,20 @@ export default function Business() {
               className="btn-orange"
               style={{ fontSize: 15 }}
             >
-              <span>🏪</span>
-              Crear sticker para mi negocio
+              {/* <span>🏪</span> */}
+              Crea un sticker para tu negocio
             </a>
           </div>
 
           {/* Visual — logo becoming sticker */}
-          <div style={{ display: "flex", justifyContent: "center", gap: 16, flexWrap: "wrap" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              gap: 16,
+              flexWrap: "wrap",
+            }}
+          >
             {/* Before */}
             <div
               style={{
@@ -137,7 +181,9 @@ export default function Business() {
               >
                 MI NEGOCIO
               </div>
-              <div style={{ fontSize: 11, color: "#555", marginTop: 8 }}>tu logo</div>
+              <div style={{ fontSize: 11, color: "#555", marginTop: 8 }}>
+                tu logo
+              </div>
             </div>
 
             {/* Arrow */}
