@@ -39,7 +39,7 @@ export default function FreeSection() {
             marginBottom: 24,
           }}
         >
-          EMPIEZA{" "}
+          SIEMPRE{" "}
           <span
             style={{
               color: "#FF8100",
@@ -94,7 +94,7 @@ export default function FreeSection() {
             className="btn-orange animate-glow-pulse"
             style={{ fontSize: 16, padding: "16px 32px" }}
           >
-            Probar Sticky gratis
+            Usar Sticky gratis
           </a>
         </div>
 

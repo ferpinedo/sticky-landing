@@ -1,5 +1,4 @@
-const WA_LINK =
-  "https://wa.me/525586444339?text=Hola";
+const WA_LINK = "https://wa.me/525586444339?text=Hola";
 
 export default function FinalCTA() {
   return (
@@ -43,34 +42,6 @@ export default function FinalCTA() {
         className="max-w-4xl mx-auto px-4 sm:px-6"
         style={{ textAlign: "center", position: "relative" }}
       >
-        {/* Decorative stickers */}
-        <div
-          style={{
-            position: "absolute",
-            top: -20,
-            left: 0,
-            fontSize: 48,
-            opacity: 0.3,
-            transform: "rotate(-15deg)",
-            userSelect: "none",
-          }}
-        >
-          ✨
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            right: 0,
-            fontSize: 48,
-            opacity: 0.3,
-            transform: "rotate(15deg)",
-            userSelect: "none",
-          }}
-        >
-          🎨
-        </div>
-
         <h2
           className="font-heading"
           style={{

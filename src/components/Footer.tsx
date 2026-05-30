@@ -204,7 +204,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Sticky. Todos los derechos reservados.
           </p>
           <p style={{ fontSize: 13, color: "#333" }}>
-            Hecho con tinta naranja🧡.
+            Hecho con tinta naranja 🧡.
           </p>
         </div>
       </div>
