@@ -38,11 +38,12 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 flex-shrink-0">
           <Image
-            src="/sticky-logo.svg"
+            src="/sticky-logo.png"
             alt="Sticky"
-            width={130}
-            height={36}
+            width={44}
+            height={44}
             priority
+            style={{ borderRadius: 10, background: "white" }}
           />
         </Link>
 

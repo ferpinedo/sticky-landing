@@ -38,7 +38,13 @@ export default function Footer() {
           {/* Brand column */}
           <div style={{ gridColumn: "span 1" }}>
             <Link href="/" style={{ display: "inline-block", marginBottom: 16 }}>
-              <Image src="/sticky-logo.svg" alt="Sticky" width={110} height={30} />
+              <Image
+                src="/sticky-logo.png"
+                alt="Sticky"
+                width={52}
+                height={52}
+                style={{ borderRadius: 12, background: "white" }}
+              />
             </Link>
             <p style={{ fontSize: 14, color: "#555", lineHeight: 1.7, marginBottom: 20, maxWidth: 220 }}>
               Crea stickers para WhatsApp con AI, directo en la app. Gratis, sin descargas.
