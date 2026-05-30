@@ -19,10 +19,6 @@ export const metadata: Metadata = {
   title: "Sticky — Crea stickers para WhatsApp con AI",
   description:
     "Crea stickers para WhatsApp en segundos con inteligencia artificial. Manda una foto, describe tu idea o edita un sticker que ya tienes. Gratis, sin descargar otra app.",
-  icons: {
-    icon: "/sticky-logo.png",
-    apple: "/sticky-logo.png",
-  },
   openGraph: {
     title: "Sticky — Crea stickers para WhatsApp con AI",
     description:
