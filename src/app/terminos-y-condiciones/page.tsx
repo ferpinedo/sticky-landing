@@ -18,7 +18,7 @@ export default function TerminosYCondiciones() {
           <Link
             href="/"
             style={{
-              display: "inline-flex",
+              display: "flex",
               alignItems: "center",
               gap: 6,
               fontSize: 13,
