@@ -1,4 +1,5 @@
-const WA_LINK = "https://wa.me/525586444339?text=Quiero%20crear%20mi%20primer%20sticker%2C%20hazme%20uno%20que%20";
+const WA_LINK =
+  "https://wa.me/525586444339?text=Quiero%20crear%20mi%20primer%20sticker%2C%20hazme%20uno%20que%20";
 
 export default function FinalCTA() {
   return (
@@ -103,7 +104,7 @@ export default function FinalCTA() {
           className="btn-orange animate-glow-pulse"
           style={{ fontSize: 16, padding: "18px 36px" }}
         >
-          <span>💬</span>
+          {/* <span>💬</span> */}
           Haz tu sticker en WhatsApp
         </a>
 

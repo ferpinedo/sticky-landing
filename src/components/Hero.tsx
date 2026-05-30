@@ -110,7 +110,7 @@ export default function Hero() {
                 className="btn-orange animate-glow-pulse"
                 style={{ fontSize: 15 }}
               >
-                <span>💬</span>
+                {/* <span>💬</span> */}
                 Haz tu sticker en WhatsApp
               </a>
             </div>

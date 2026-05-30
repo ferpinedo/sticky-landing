@@ -65,7 +65,7 @@ export default function Header() {
           rel="noopener noreferrer"
           className="hidden md:flex btn-orange text-sm"
         >
-          <span>💬</span>
+          {/* <span>💬</span> */}
           Haz tu sticker
         </a>
 
@@ -120,7 +120,7 @@ export default function Header() {
             className="btn-orange text-sm mt-2 justify-center"
             onClick={() => setMenuOpen(false)}
           >
-            <span>💬</span>
+            {/* <span>💬</span> */}
             Haz tu sticker
           </a>
         </div>
