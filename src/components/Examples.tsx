@@ -59,7 +59,7 @@ function MiniChat({ conversation }: { conversation: Msg[] }) {
         display: "flex",
         flexDirection: "column",
         gap: 6,
-        minHeight: 160,
+        flex: 1,
       }}
     >
       {conversation.map((msg, i) => {
@@ -157,12 +157,12 @@ export default function Examples() {
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 20 }}>
           {examples.map((ex, i) => (
-            <div key={i} className="feature-card" style={{ background: "#1E1E1E", border: "1px solid #2A2A2A", borderRadius: 16, overflow: "hidden" }}>
-              <div style={{ padding: "12px 14px", borderBottom: "1px solid #2A2A2A", display: "flex", alignItems: "center", gap: 8 }}>
+            <div key={i} className="feature-card" style={{ background: "#1E1E1E", border: "1px solid #2A2A2A", borderRadius: 16, overflow: "hidden", display: "flex", flexDirection: "column" }}>
+              <div style={{ padding: "12px 14px", borderBottom: "1px solid #2A2A2A", display: "flex", alignItems: "center", gap: 8, flexShrink: 0 }}>
                 <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#FF8100" }} />
                 <span style={{ fontSize: 12, fontWeight: 700, color: "#FF8100", letterSpacing: "0.05em" }}>{ex.label}</span>
               </div>
-              <div style={{ padding: 12 }}>
+              <div style={{ padding: 12, flex: 1, display: "flex", flexDirection: "column" }}>
                 <MiniChat conversation={ex.conversation} />
               </div>
             </div>
