@@ -9,7 +9,7 @@ const navLinks = [
   { href: "#como-funciona", label: "Cómo funciona" },
   { href: "#ejemplos", label: "Ejemplos" },
   { href: "#negocios", label: "Para negocios" },
-  { href: "#gratis", label: "Gratis" },
+  // { href: "#gratis", label: "Gratis" },
   { href: "/contacto", label: "Contacto" },
 ];
 
@@ -27,9 +27,7 @@ export default function Header() {
     <header
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
       style={{
-        background: scrolled
-          ? "rgba(18,18,18,0.95)"
-          : "transparent",
+        background: scrolled ? "rgba(18,18,18,0.95)" : "transparent",
         backdropFilter: scrolled ? "blur(16px)" : "none",
         borderBottom: scrolled ? "1px solid rgba(42,42,42,0.8)" : "none",
       }}
@@ -79,7 +77,9 @@ export default function Header() {
         >
           <span
             className="block w-6 h-0.5 bg-white transition-all duration-200"
-            style={menuOpen ? { transform: "translateY(8px) rotate(45deg)" } : {}}
+            style={
+              menuOpen ? { transform: "translateY(8px) rotate(45deg)" } : {}
+            }
           />
           <span
             className="block w-6 h-0.5 bg-white transition-all duration-200"
@@ -87,7 +87,9 @@ export default function Header() {
           />
           <span
             className="block w-6 h-0.5 bg-white transition-all duration-200"
-            style={menuOpen ? { transform: "translateY(-8px) rotate(-45deg)" } : {}}
+            style={
+              menuOpen ? { transform: "translateY(-8px) rotate(-45deg)" } : {}
+            }
           />
         </button>
       </div>
@@ -96,7 +98,10 @@ export default function Header() {
       {menuOpen && (
         <div
           className="md:hidden px-4 pb-6 pt-2 flex flex-col gap-4"
-          style={{ background: "rgba(18,18,18,0.97)", borderTop: "1px solid #2A2A2A" }}
+          style={{
+            background: "rgba(18,18,18,0.97)",
+            borderTop: "1px solid #2A2A2A",
+          }}
         >
           {navLinks.map((l) => (
             <Link
