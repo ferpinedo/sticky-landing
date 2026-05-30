@@ -1,4 +1,17 @@
+import {
+  BoltIcon,
+  DevicePhoneMobileIcon,
+  GiftIcon,
+  SparklesIcon,
+} from "@heroicons/react/24/outline";
 import PhoneMockup from "./PhoneMockup";
+
+const featurePills = [
+  { icon: SparklesIcon, label: "AI generativa" },
+  { icon: BoltIcon, label: "En segundos" },
+  { icon: DevicePhoneMobileIcon, label: "Solo WhatsApp" },
+  { icon: GiftIcon, label: "Sin costo" },
+] as const;
 
 const WA_LINK = "https://wa.me/525586444339?text=Hola";
 
@@ -119,15 +132,13 @@ export default function Hero() {
                 marginTop: 28,
               }}
             >
-              {[
-                "🤖 AI generativa",
-                "⚡️ En segundos",
-                "📱 Solo WhatsApp",
-                "🆓 Sin costo",
-              ].map((tag) => (
+              {featurePills.map(({ icon: Icon, label }) => (
                 <span
-                  key={tag}
+                  key={label}
                   style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 6,
                     fontSize: 12,
                     fontWeight: 600,
                     color: "#888",
@@ -137,7 +148,11 @@ export default function Hero() {
                     padding: "5px 12px",
                   }}
                 >
-                  {tag}
+                  <Icon
+                    aria-hidden
+                    style={{ width: 14, height: 14, flexShrink: 0 }}
+                  />
+                  {label}
                 </span>
               ))}
             </div>
