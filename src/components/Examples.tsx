@@ -3,9 +3,9 @@ const examples = [
     label: "Foto a sticker",
     conversation: [
       { type: "out", text: "Hazme un sticker de esta foto de mi gato 😄" },
-      { type: "in",  text: "Claro, mándame la foto 🧡" },
+      { type: "in", text: "Claro, mándame la foto 🧡" },
       { type: "img", emoji: "🐱", caption: "gato.jpg" },
-      { type: "in",  text: "Listo, aquí está tu sticker 🎨" },
+      { type: "in", text: "Listo, aquí está tu sticker 🎨" },
       { type: "sticker", emoji: "🐱✨" },
     ],
   },
@@ -14,7 +14,7 @@ const examples = [
     conversation: [
       { type: "out", text: 'Ponle "Modo bestia" a este sticker' },
       { type: "sticker-out", emoji: "💪" },
-      { type: "in",  text: "Hecho 😎" },
+      { type: "in", text: "Hecho 😎" },
       { type: "sticker-labeled", emoji: "💪", text: "MODO BESTIA" },
     ],
   },
@@ -23,38 +23,45 @@ const examples = [
     conversation: [
       { type: "out", text: "Hazlo en versión zombie" },
       { type: "sticker-out", emoji: "😎" },
-      { type: "in",  text: "Aquí tu sticker zombie 🧟" },
+      { type: "in", text: "Aquí tu sticker zombie 🧟" },
       { type: "sticker", emoji: "🧟" },
     ],
   },
-  {
-    label: "Reacción chistosa",
-    conversation: [
-      { type: "out", text: 'Crea un sticker de "no gracias"' },
-      { type: "in",  text: "Va, aquí va 😂" },
-      { type: "sticker-labeled", emoji: "🙅", text: "NO GRACIAS" },
-    ],
-  },
+  // {
+  //   label: "Reacción chistosa",
+  //   conversation: [
+  //     { type: "out", text: 'Crea un sticker de "no gracias"' },
+  //     { type: "in",  text: "Va, aquí va 😂" },
+  //     { type: "sticker-labeled", emoji: "🙅", text: "NO GRACIAS" },
+  //   ],
+  // },
   {
     label: "Logo de negocio",
     conversation: [
-      { type: "out", text: "Mándale mi logo para crear un sticker de mi negocio" },
+      {
+        type: "out",
+        text: "Mándale mi logo para crear un sticker de mi negocio",
+      },
       { type: "img", emoji: "🏪", caption: "logo.png" },
-      { type: "in",  text: "¡Perfecto! Aquí está tu sticker de marca 🧡" },
+      { type: "in", text: "¡Perfecto! Aquí está tu sticker de marca 🧡" },
       { type: "sticker", emoji: "🏷️✨" },
     ],
   },
-  {
-    label: "Sticker de texto",
-    conversation: [
-      { type: "out", text: 'Hazme un sticker que diga "Ya valió"' },
-      { type: "in",  text: "Aquí está 😄" },
-      { type: "sticker-labeled", emoji: "😬", text: "YA VALIÓ" },
-    ],
-  },
+  // {
+  //   label: "Sticker de texto",
+  //   conversation: [
+  //     { type: "out", text: 'Hazme un sticker que diga "Ya valió"' },
+  //     { type: "in",  text: "Aquí está 😄" },
+  //     { type: "sticker-labeled", emoji: "😬", text: "YA VALIÓ" },
+  //   ],
+  // },
 ];
 
-function MiniChat({ conversation }: { conversation: typeof examples[0]["conversation"] }) {
+function MiniChat({
+  conversation,
+}: {
+  conversation: (typeof examples)[0]["conversation"];
+}) {
   return (
     <div
       style={{
@@ -123,7 +130,9 @@ function MiniChat({ conversation }: { conversation: typeof examples[0]["conversa
               }}
             >
               {"emoji" in msg ? msg.emoji : null}
-              <span style={{ fontSize: 9, color: "#8696a0" }}>{"caption" in msg ? msg.caption : null}</span>
+              <span style={{ fontSize: 9, color: "#8696a0" }}>
+                {"caption" in msg ? msg.caption : null}
+              </span>
             </div>
           );
         }
@@ -226,10 +235,17 @@ export default function Examples() {
             className="font-heading"
             style={{ fontSize: "clamp(36px, 5.5vw, 68px)", color: "#F5F5F5" }}
           >
-            LO QUE STICKY{" "}
-            <span style={{ color: "#FF8100" }}>PUEDE HACER</span>
+            LO QUE STICKY <span style={{ color: "#FF8100" }}>PUEDE HACER</span>
           </h2>
-          <p style={{ fontSize: 16, color: "#888", marginTop: 12, maxWidth: 500, margin: "12px auto 0" }}>
+          <p
+            style={{
+              fontSize: 16,
+              color: "#888",
+              marginTop: 12,
+              maxWidth: 500,
+              margin: "12px auto 0",
+            }}
+          >
             Desde fotos hasta reacciones chistosas, stickers de marca y más.
           </p>
         </div>
@@ -270,7 +286,14 @@ export default function Examples() {
                     background: "#FF8100",
                   }}
                 />
-                <span style={{ fontSize: 12, fontWeight: 700, color: "#FF8100", letterSpacing: "0.05em" }}>
+                <span
+                  style={{
+                    fontSize: 12,
+                    fontWeight: 700,
+                    color: "#FF8100",
+                    letterSpacing: "0.05em",
+                  }}
+                >
                   {ex.label}
                 </span>
               </div>
