@@ -1,4 +1,4 @@
-const WA_LINK = "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
+const WA_LINK = "https://wa.me/525586444339?text=Haz%20un%20sticker%20para%20mi%20negocio%20que%20";
 
 const businessCards = [
   {
