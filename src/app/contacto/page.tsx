@@ -39,7 +39,7 @@ export default function Contacto() {
           <Link
             href="/"
             style={{
-              display: "inline-flex",
+              display: "flex",
               alignItems: "center",
               gap: 6,
               fontSize: 13,
@@ -214,7 +214,7 @@ export default function Contacto() {
               className="btn-orange"
               style={{ fontSize: 15 }}
             >
-              <span>✦</span>
+              {/* <span>✦</span> */}
               Crear mi primer sticker gratis
             </a>
           </div>

@@ -1,6 +1,9 @@
 export default function PhoneMockup() {
   return (
-    <div className="animate-float" style={{ filter: "drop-shadow(0 40px 80px rgba(0,0,0,0.6))" }}>
+    <div
+      className="animate-float"
+      style={{ filter: "drop-shadow(0 40px 80px rgba(0,0,0,0.6))" }}
+    >
       {/* Side buttons */}
       <div style={{ position: "relative" }}>
         {/* Volume up */}
@@ -50,10 +53,17 @@ export default function PhoneMockup() {
             <div className="wa-header">
               <div className="wa-avatar">🍊</div>
               <div style={{ flex: 1 }}>
-                <div className="wa-contact-name">Sticky ✦</div>
+                <div className="wa-contact-name">Sticky</div>
                 <div className="wa-contact-status">en línea</div>
               </div>
-              <div style={{ display: "flex", gap: 14, color: "#8696a0", fontSize: 16 }}>
+              <div
+                style={{
+                  display: "flex",
+                  gap: 14,
+                  color: "#8696a0",
+                  fontSize: 16,
+                }}
+              >
                 <span>📹</span>
                 <span>📞</span>
                 <span>⋮</span>
@@ -94,7 +104,9 @@ export default function PhoneMockup() {
               <div className="wa-photo-bubble bubble-anim">
                 <div style={{ textAlign: "center" }}>
                   <div style={{ fontSize: 32 }}>🐕</div>
-                  <div style={{ fontSize: 10, color: "#8696a0", marginTop: 4 }}>foto.jpg</div>
+                  <div style={{ fontSize: 10, color: "#8696a0", marginTop: 4 }}>
+                    foto.jpg
+                  </div>
                 </div>
                 <div
                   style={{
@@ -129,8 +141,18 @@ export default function PhoneMockup() {
               </div>
 
               {/* Sticker 2 */}
-              <div className="wa-sticker-bubble bubble-anim" style={{ position: "relative" }}>
-                <div style={{ fontSize: 60, filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.5))" }}>😑</div>
+              <div
+                className="wa-sticker-bubble bubble-anim"
+                style={{ position: "relative" }}
+              >
+                <div
+                  style={{
+                    fontSize: 60,
+                    filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.5))",
+                  }}
+                >
+                  😑
+                </div>
                 <div
                   style={{
                     position: "absolute",

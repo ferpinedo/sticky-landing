@@ -62,7 +62,7 @@ export default function Hero() {
         >
           {/* Copy */}
           <div style={{ flex: "1 1 min(100%, 580px)" }}>
-            <div className="section-tag">✦ Powered by AI</div>
+            {/* <div className="section-tag">✦ Powered by AI</div> */}
 
             <h1
               className="font-heading"
