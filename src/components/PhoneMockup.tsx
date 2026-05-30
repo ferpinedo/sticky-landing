@@ -1,9 +1,12 @@
 import Image from "next/image";
 import {
   CameraIcon,
+  EllipsisVerticalIcon,
   FaceSmileIcon,
   MicrophoneIcon,
   PaperClipIcon,
+  PhoneIcon,
+  VideoCameraIcon,
 } from "@heroicons/react/24/outline";
 
 const waIconColor = "#8696a0";
@@ -88,13 +91,33 @@ export default function PhoneMockup() {
                 style={{
                   display: "flex",
                   gap: 14,
-                  color: "#8696a0",
-                  fontSize: 16,
+                  alignItems: "center",
                 }}
               >
-                <span>📹</span>
-                <span>📞</span>
-                <span>⋮</span>
+                <VideoCameraIcon
+                  aria-hidden
+                  style={{
+                    width: 20,
+                    height: 20,
+                    color: waIconColor,
+                  }}
+                />
+                <PhoneIcon
+                  aria-hidden
+                  style={{
+                    width: 20,
+                    height: 20,
+                    color: waIconColor,
+                  }}
+                />
+                <EllipsisVerticalIcon
+                  aria-hidden
+                  style={{
+                    width: 20,
+                    height: 20,
+                    color: waIconColor,
+                  }}
+                />
               </div>
             </div>
 
