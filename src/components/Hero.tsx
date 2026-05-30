@@ -5,13 +5,13 @@ const WA_LINK = "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
 export default function Hero() {
   return (
     <section
+      className="pt-32 md:pt-20"
       style={{
         minHeight: "100vh",
         display: "flex",
         alignItems: "center",
         position: "relative",
         overflow: "hidden",
-        paddingTop: 80,
         paddingBottom: 60,
       }}
     >
