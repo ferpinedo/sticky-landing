@@ -14,11 +14,11 @@ const examples: { label: string; conversation: Msg[] }[] = [
   {
     label: "Foto a sticker",
     conversation: [
-      { type: "out", text: "Hazme un sticker de esta foto mía en el gym 💪" },
-      { type: "in", text: "Va, mándame la foto 🧡" },
-      { type: "img-real", src: "/stickers/gym.webp", caption: "foto-gym.jpg" },
-      { type: "in", text: "¡Listo! Aquí está tu sticker 💪" },
-      { type: "sticker-img", src: "/stickers/gym.webp", alt: "Sticker gym" },
+      { type: "out", text: "Hazme un sticker de esta foto, pero que en lugar de la mancuerna esté cargando un garrafón de agua 💪" },
+      { type: "in", text: "Va, ahorita te lo hago 🧡" },
+      { type: "img-real", src: "/stickers/foto-gym.jpeg", caption: "foto-gym.jpg" },
+      { type: "in", text: "¡Listo! Aquí está tu sticker 💧💪" },
+      { type: "sticker-img", src: "/stickers/gym.webp", alt: "Sticker gym garrafón" },
     ],
   },
   {
