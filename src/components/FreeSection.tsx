@@ -1,5 +1,4 @@
-const WA_LINK =
-  "https://wa.me/525586444339?text=Hola";
+const WA_LINK = "https://wa.me/525586444339?text=Hola";
 
 export default function FreeSection() {
   return (
@@ -95,7 +94,6 @@ export default function FreeSection() {
             className="btn-orange animate-glow-pulse"
             style={{ fontSize: 16, padding: "16px 32px" }}
           >
-            {/* <span>✦</span> */}
             Probar Sticky gratis
           </a>
         </div>

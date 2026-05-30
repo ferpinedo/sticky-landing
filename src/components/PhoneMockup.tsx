@@ -69,15 +69,19 @@ export default function PhoneMockup() {
                 }}
               >
                 <Image
-                  src="/sticky-logo-sticker.png"
+                  src="/sticky-logo.png"
                   alt="Sticky"
                   width={36}
                   height={36}
-                  style={{ objectFit: "cover" }}
+                  style={{
+                    objectFit: "cover",
+                    padding: 4,
+                    backgroundColor: "#000",
+                  }}
                 />
               </div>
               <div style={{ flex: 1 }}>
-                <div className="wa-contact-name">Sticky ✦</div>
+                <div className="wa-contact-name">Sticky</div>
                 <div className="wa-contact-status">en línea</div>
               </div>
               <div
@@ -177,16 +181,31 @@ export default function PhoneMockup() {
             <div className="wa-input-bar">
               <FaceSmileIcon
                 aria-hidden
-                style={{ width: 22, height: 22, color: waIconColor, flexShrink: 0 }}
+                style={{
+                  width: 22,
+                  height: 22,
+                  color: waIconColor,
+                  flexShrink: 0,
+                }}
               />
               <div className="wa-input-pill">Mensaje</div>
               <PaperClipIcon
                 aria-hidden
-                style={{ width: 22, height: 22, color: waIconColor, flexShrink: 0 }}
+                style={{
+                  width: 22,
+                  height: 22,
+                  color: waIconColor,
+                  flexShrink: 0,
+                }}
               />
               <CameraIcon
                 aria-hidden
-                style={{ width: 22, height: 22, color: waIconColor, flexShrink: 0 }}
+                style={{
+                  width: 22,
+                  height: 22,
+                  color: waIconColor,
+                  flexShrink: 0,
+                }}
               />
               <div
                 style={{

@@ -36,7 +36,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 flex-shrink-0">
           <Image
-            src="/sticky-logo-sticker-transparent.png"
+            src="/sticky-logo.png"
             alt="Sticky"
             width={64}
             height={64}

@@ -215,7 +215,6 @@ export default function Contacto() {
               className="btn-orange"
               style={{ fontSize: 15 }}
             >
-              {/* <span>✦</span> */}
               Crear mi primer sticker gratis
             </a>
           </div>

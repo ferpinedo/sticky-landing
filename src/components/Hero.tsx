@@ -54,8 +54,6 @@ export default function Hero() {
         <div className="flex flex-wrap items-center justify-between gap-y-20 md:gap-12">
           {/* Copy */}
           <div style={{ flex: "1 1 min(100%, 580px)" }}>
-            {/* <div className="section-tag">✦ Powered by AI</div> */}
-
             <h1
               className="font-heading"
               style={{
