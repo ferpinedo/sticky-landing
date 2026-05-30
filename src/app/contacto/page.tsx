@@ -8,8 +8,7 @@ export const metadata: Metadata = {
   description: "Comunícate con el equipo de Sticky.",
 };
 
-const WA_LINK =
-  "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
+const WA_LINK = "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
 
 export default function Contacto() {
   return (
@@ -26,7 +25,14 @@ export default function Contacto() {
       >
         <div
           className="spray-circle"
-          style={{ width: 600, height: 600, background: "#FF8100", top: "30%", right: -200, opacity: 0.06 }}
+          style={{
+            width: 600,
+            height: 600,
+            background: "#FF8100",
+            top: "30%",
+            right: -200,
+            opacity: 0.06,
+          }}
         />
 
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
@@ -68,11 +74,19 @@ export default function Contacto() {
               maxWidth: 500,
             }}
           >
-            ¿Tienes preguntas, ideas o quieres saber más sobre Sticky? Escríbenos, con gusto te respondemos.
+            ¿Tienes preguntas, ideas o quieres saber más sobre Sticky?
+            Escríbenos, con gusto te respondemos.
           </p>
 
           {/* Contact options */}
-          <div style={{ display: "flex", flexDirection: "column", gap: 20, maxWidth: 480 }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: 20,
+              maxWidth: 480,
+            }}
+          >
             {/* WhatsApp */}
             <a
               href={WA_LINK}
@@ -109,14 +123,23 @@ export default function Contacto() {
                 💬
               </div>
               <div>
-                <div style={{ fontSize: 16, fontWeight: 700, color: "#F5F5F5", marginBottom: 4 }}>
-                  Escribirle a Sticky en WhatsApp
+                <div
+                  style={{
+                    fontSize: 16,
+                    fontWeight: 700,
+                    color: "#F5F5F5",
+                    marginBottom: 4,
+                  }}
+                >
+                  Haz tu sticker en WhatsApp
                 </div>
                 <div style={{ fontSize: 13, color: "#666" }}>
                   La forma más rápida de probar y hacer preguntas
                 </div>
               </div>
-              <div style={{ marginLeft: "auto", color: "#555", fontSize: 18 }}>→</div>
+              <div style={{ marginLeft: "auto", color: "#555", fontSize: 18 }}>
+                →
+              </div>
             </a>
 
             {/* Email */}
@@ -153,14 +176,23 @@ export default function Contacto() {
                 ✉️
               </div>
               <div>
-                <div style={{ fontSize: 16, fontWeight: 700, color: "#F5F5F5", marginBottom: 4 }}>
+                <div
+                  style={{
+                    fontSize: 16,
+                    fontWeight: 700,
+                    color: "#F5F5F5",
+                    marginBottom: 4,
+                  }}
+                >
                   fer@quentli.com
                 </div>
                 <div style={{ fontSize: 13, color: "#666" }}>
                   Para temas de negocios, prensa o soporte
                 </div>
               </div>
-              <div style={{ marginLeft: "auto", color: "#555", fontSize: 18 }}>→</div>
+              <div style={{ marginLeft: "auto", color: "#555", fontSize: 18 }}>
+                →
+              </div>
             </a>
           </div>
 

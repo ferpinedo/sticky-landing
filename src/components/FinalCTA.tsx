@@ -1,5 +1,4 @@
-const WA_LINK =
-  "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
+const WA_LINK = "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
 
 export default function FinalCTA() {
   return (
@@ -34,11 +33,15 @@ export default function FinalCTA() {
           left: "10%",
           right: "10%",
           height: 1,
-          background: "linear-gradient(90deg, transparent, rgba(255,129,0,0.5), transparent)",
+          background:
+            "linear-gradient(90deg, transparent, rgba(255,129,0,0.5), transparent)",
         }}
       />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6" style={{ textAlign: "center", position: "relative" }}>
+      <div
+        className="max-w-4xl mx-auto px-4 sm:px-6"
+        style={{ textAlign: "center", position: "relative" }}
+      >
         {/* Decorative stickers */}
         <div
           style={{
@@ -89,7 +92,8 @@ export default function FinalCTA() {
             lineHeight: 1.6,
           }}
         >
-          Abre WhatsApp, escríbele a Sticky y crea tu primer sticker en segundos.
+          Abre WhatsApp, escríbele a Sticky y crea tu primer sticker en
+          segundos.
         </p>
 
         <a
@@ -100,7 +104,7 @@ export default function FinalCTA() {
           style={{ fontSize: 16, padding: "18px 36px" }}
         >
           <span>💬</span>
-          Escribirle a Sticky en WhatsApp
+          Haz tu sticker en WhatsApp
         </a>
 
         <div style={{ marginTop: 24, fontSize: 13, color: "#555" }}>

@@ -66,7 +66,7 @@ export default function Header() {
           className="hidden md:flex btn-orange text-sm"
         >
           <span>💬</span>
-          Escribirle a Sticky
+          Haz tu sticker
         </a>
 
         {/* Mobile hamburger */}
@@ -121,7 +121,7 @@ export default function Header() {
             onClick={() => setMenuOpen(false)}
           >
             <span>💬</span>
-            Escribirle a Sticky
+            Haz tu sticker
           </a>
         </div>
       )}

@@ -78,7 +78,7 @@ export default function Footer() {
                 transition: "background 0.2s",
               }}
             >
-              <span>💬</span> Escribirle a Sticky
+              <span>💬</span> Haz tu sticker en WhatsApp
             </a>
           </div>
 

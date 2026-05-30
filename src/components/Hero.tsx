@@ -18,18 +18,32 @@ export default function Hero() {
       {/* Background blobs */}
       <div
         className="spray-circle"
-        style={{ width: 600, height: 600, background: "#FF8100", top: -100, left: -100 }}
+        style={{
+          width: 600,
+          height: 600,
+          background: "#FF8100",
+          top: -100,
+          left: -100,
+        }}
       />
       <div
         className="spray-circle"
-        style={{ width: 400, height: 400, background: "#FF8100", bottom: 0, right: 100, opacity: 0.05 }}
+        style={{
+          width: 400,
+          height: 400,
+          background: "#FF8100",
+          bottom: 0,
+          right: 100,
+          opacity: 0.05,
+        }}
       />
       {/* Dot grid texture */}
       <div
         style={{
           position: "absolute",
           inset: 0,
-          backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px)",
+          backgroundImage:
+            "radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px)",
           backgroundSize: "32px 32px",
           pointerEvents: "none",
         }}
@@ -60,8 +74,8 @@ export default function Hero() {
               }}
             >
               CREA STICKERS{" "}
-              <span style={{ color: "#FF8100" }}>PARA WHATSAPP</span>{" "}
-              EN SEGUNDOS
+              <span style={{ color: "#FF8100" }}>PARA WHATSAPP</span> EN
+              SEGUNDOS
             </h1>
 
             <p
@@ -74,11 +88,21 @@ export default function Hero() {
               }}
             >
               Pídele un sticker, mándale una foto o edita uno que ya tengas.{" "}
-              <strong style={{ color: "#F5F5F5" }}>Sticky lo hace con AI,</strong>{" "}
+              <strong style={{ color: "#F5F5F5" }}>
+                Sticky lo hace con AI,
+              </strong>{" "}
               directo en WhatsApp.
             </p>
 
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 14, alignItems: "center", marginBottom: 20 }}>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 14,
+                alignItems: "center",
+                marginBottom: 20,
+              }}
+            >
               <a
                 href={WA_LINK}
                 target="_blank"
@@ -87,7 +111,7 @@ export default function Hero() {
                 style={{ fontSize: 15 }}
               >
                 <span>💬</span>
-                Escribirle a Sticky en WhatsApp
+                Haz tu sticker en WhatsApp
               </a>
             </div>
 
@@ -97,8 +121,20 @@ export default function Hero() {
             </p>
 
             {/* Feature pills */}
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginTop: 28 }}>
-              {["🤖 AI generativa", "⚡️ En segundos", "📱 Solo WhatsApp", "🆓 Sin costo"].map((tag) => (
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 10,
+                marginTop: 28,
+              }}
+            >
+              {[
+                "🤖 AI generativa",
+                "⚡️ En segundos",
+                "📱 Solo WhatsApp",
+                "🆓 Sin costo",
+              ].map((tag) => (
                 <span
                   key={tag}
                   style={{
