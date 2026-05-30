@@ -32,16 +32,16 @@ export default function Header() {
         borderBottom: scrolled ? "1px solid rgba(42,42,42,0.8)" : "none",
       }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20 md:h-[72px]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 flex-shrink-0">
           <Image
-            src="/sticky-logo-sticker.png"
+            src="/sticky-logo-sticker-transparent.png"
             alt="Sticky"
-            width={56}
-            height={56}
+            width={64}
+            height={64}
             priority
-            className="w-14 h-14 md:w-11 md:h-11"
+            className="w-14 h-14 md:w-16 md:h-16"
           />
         </Link>
 
