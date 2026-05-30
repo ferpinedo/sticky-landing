@@ -1,4 +1,12 @@
 import Image from "next/image";
+import {
+  CameraIcon,
+  FaceSmileIcon,
+  MicrophoneIcon,
+  PaperClipIcon,
+} from "@heroicons/react/24/outline";
+
+const waIconColor = "#8696a0";
 
 export default function PhoneMockup() {
   return (
@@ -168,24 +176,35 @@ export default function PhoneMockup() {
 
             {/* Input bar */}
             <div className="wa-input-bar">
-              <span style={{ fontSize: 20, color: "#8696a0" }}>😊</span>
+              <FaceSmileIcon
+                aria-hidden
+                style={{ width: 22, height: 22, color: waIconColor, flexShrink: 0 }}
+              />
               <div className="wa-input-pill">Mensaje</div>
-              <span style={{ fontSize: 20, color: "#8696a0" }}>📎</span>
-              <span style={{ fontSize: 20, color: "#8696a0" }}>📷</span>
+              <PaperClipIcon
+                aria-hidden
+                style={{ width: 22, height: 22, color: waIconColor, flexShrink: 0 }}
+              />
+              <CameraIcon
+                aria-hidden
+                style={{ width: 22, height: 22, color: waIconColor, flexShrink: 0 }}
+              />
               <div
                 style={{
-                  width: 36,
-                  height: 36,
+                  width: 38,
+                  height: 38,
                   borderRadius: "50%",
                   background: "#00a884",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  fontSize: 16,
                   flexShrink: 0,
                 }}
               >
-                🎤
+                <MicrophoneIcon
+                  aria-hidden
+                  style={{ width: 20, height: 20, color: "#fff" }}
+                />
               </div>
             </div>
           </div>
