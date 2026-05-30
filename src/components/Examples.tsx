@@ -16,50 +16,69 @@ const examples: { label: string; conversation: Msg[] }[] = [
     conversation: [
       {
         type: "out",
-        text: "Hazme un sticker de esta foto, pero que en lugar de la mancuerna esté cargando un garrafón de agua 💪",
+        text: "Hazme un sticker de esta foto, pero que en lugar de la mancuerna esté cargando un garrafón de agua",
       },
-      { type: "in", text: "Va, ahorita te lo hago 🧡" },
       {
         type: "img-real",
         src: "/stickers/foto-gym.jpeg",
         caption: "foto-gym.jpg",
       },
-      { type: "in", text: "¡Listo! Aquí está tu sticker 💧💪" },
+      { type: "in", text: "Va, ahorita te lo hago" },
       {
         type: "sticker-img",
         src: "/stickers/gym.webp",
         alt: "Sticker gym garrafón",
       },
+      { type: "in", text: "¡Listo! Aquí está tu sticker" },
+    ],
+  },
+  {
+    label: "Crea un sticker desde cero",
+    conversation: [
+      {
+        type: "in",
+        text: "Hola, ¿qué sticker deseas hacer hoy?",
+      },
+      {
+        type: "out",
+        text: "Por favor, haz un sticker de Michael Jordan clavando una canasta",
+      },
+      { type: "in", text: "Claro, dame un segundo" },
+      {
+        type: "sticker-img",
+        src: "/stickers/jordan.webp",
+        alt: "Sticker Michael Jordan clavando una canasta",
+      },
+      { type: "in", text: "Listo" },
     ],
   },
   {
     label: "Modifica stickers existentes",
     conversation: [
-      { type: "out", text: 'Ponle "Modo bestia" a este sticker' },
-      { type: "sticker-out", emoji: "💪" },
-      { type: "in", text: "Hecho 😎" },
-      { type: "sticker-labeled", emoji: "💪", text: "MODO BESTIA" },
+      { type: "out", text: 'Ponle "Amo las conchas" a este sticker' },
+      {
+        type: "sticker-img-out",
+        src: "/stickers/concha.webp",
+        alt: "Concha sticker",
+      },
+      { type: "in", text: "Listo, aquí va con el texto" },
+      {
+        type: "sticker-img",
+        src: "/stickers/amolasconchas.webp",
+        alt: "Amo las conchas sticker",
+      },
     ],
   },
-  // {
-  //   label: "Agregar texto a sticker",
-  //   conversation: [
-  //     { type: "out", text: 'Ponle "Amo las conchas" a este sticker 🍞' },
-  //     { type: "sticker-img-out", src: "/stickers/concha.webp", alt: "Concha sticker" },
-  //     { type: "in", text: "Listo, aquí va con el texto 🧡" },
-  //     { type: "sticker-img", src: "/stickers/amolasconchas.webp", alt: "Amo las conchas sticker" },
-  //   ],
-  // },
   {
     label: "Stickers para tu negocio",
     conversation: [
-      { type: "out", text: "Convierte mi logo en sticker 🏷️" },
+      { type: "out", text: "Convierte mi logo en sticker" },
       {
         type: "img-real",
         src: "/stickers/quentli-logo.png",
         caption: "logo.png",
       },
-      { type: "in", text: "¡Perfecto! Aquí está tu sticker de marca 🧡" },
+      { type: "in", text: "¡Perfecto! Aquí está tu sticker de marca" },
       {
         type: "sticker-img",
         src: "/stickers/quentli-sticker.webp",

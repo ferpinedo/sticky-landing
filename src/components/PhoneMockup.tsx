@@ -140,13 +140,13 @@ export default function PhoneMockup() {
 
               {/* User asks */}
               <div className="wa-bubble wa-bubble-out bubble-anim">
-                Hazme un sticker de Michael Jordan clavando una canasta 🏀
+                Hazme un sticker de Michael Jordan clavando una canasta
                 <div className="wa-bubble-time">9:41</div>
               </div>
 
               {/* Sticky replies */}
               <div className="wa-bubble wa-bubble-in bubble-anim">
-                ¡Va! Ahorita te lo hago 🧡
+                ¡Va! Ahorita te lo hago
                 <div className="wa-bubble-time">9:41</div>
               </div>
 
@@ -189,7 +189,7 @@ export default function PhoneMockup() {
 
               {/* Sticky follow-up */}
               <div className="wa-bubble wa-bubble-in bubble-anim">
-                Listo 🏀 ¿Hacemos algún cambio?
+                Listo. ¿Hacemos algún cambio?
                 <div className="wa-bubble-time">9:42</div>
               </div>
 
