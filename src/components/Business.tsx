@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {
+  BoltIcon,
   PaintBrushIcon,
   ShareIcon,
   TagIcon,
@@ -23,6 +24,11 @@ const businessCards = [
     icon: ShareIcon,
     label: "Viral en WhatsApp",
     desc: "Tus clientes lo comparten y tu marca viaja",
+  },
+  {
+    icon: BoltIcon,
+    label: "Sin diseñador",
+    desc: "Stickers profesionales creados con AI en segundos",
   },
 ] as const;
 
@@ -100,12 +106,8 @@ export default function Business() {
 
             {/* Business cards */}
             <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: 12,
-                marginBottom: 36,
-              }}
+              className="grid grid-cols-2 gap-3"
+              style={{ marginBottom: 36 }}
             >
               {businessCards.map(({ icon: Icon, label, desc }) => (
                 <div
@@ -116,10 +118,10 @@ export default function Business() {
                     borderRadius: 12,
                     padding: "14px 18px",
                     display: "flex",
-                    alignItems: "center",
+                    alignItems: "flex-start",
                     gap: 10,
-                    flex: "1 1 auto",
-                    minWidth: 180,
+                    height: "100%",
+                    minHeight: 104,
                   }}
                 >
                   <Icon
@@ -177,6 +179,11 @@ export default function Business() {
                 padding: 28,
                 textAlign: "center",
                 width: 160,
+                height: 160,
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
               <Image
@@ -186,12 +193,10 @@ export default function Business() {
                 height={80}
                 style={{
                   borderRadius: 16,
-                  marginBottom: 10,
                   display: "block",
-                  marginInline: "auto",
                 }}
               />
-              <div style={{ fontSize: 11, color: "#555", marginTop: 8 }}>
+              <div style={{ fontSize: 11, color: "#555", marginTop: 10 }}>
                 Tu logo
               </div>
             </div>
