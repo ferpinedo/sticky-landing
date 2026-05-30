@@ -1,8 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const WA_LINK =
-  "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
+const WA_LINK = "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
 
 const navLinks = [
   { href: "/", label: "Inicio" },
@@ -37,7 +36,10 @@ export default function Footer() {
         >
           {/* Brand column */}
           <div style={{ gridColumn: "span 1" }}>
-            <Link href="/" style={{ display: "inline-block", marginBottom: 16 }}>
+            <Link
+              href="/"
+              style={{ display: "inline-block", marginBottom: 16 }}
+            >
               <Image
                 src="/sticky-logo.png"
                 alt="Sticky"
@@ -46,8 +48,17 @@ export default function Footer() {
                 style={{ borderRadius: 12, background: "white" }}
               />
             </Link>
-            <p style={{ fontSize: 14, color: "#555", lineHeight: 1.7, marginBottom: 20, maxWidth: 220 }}>
-              Crea stickers para WhatsApp con AI, directo en la app. Gratis, sin descargas.
+            <p
+              style={{
+                fontSize: 14,
+                color: "#555",
+                lineHeight: 1.7,
+                marginBottom: 20,
+                maxWidth: 220,
+              }}
+            >
+              Crea stickers para WhatsApp con AI, directo en la app. Gratis, sin
+              descargas.
             </p>
             <a
               href={WA_LINK}
@@ -85,7 +96,14 @@ export default function Footer() {
             >
               Navegación
             </h4>
-            <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 10 }}>
+            <ul
+              style={{
+                listStyle: "none",
+                display: "flex",
+                flexDirection: "column",
+                gap: 10,
+              }}
+            >
               {navLinks.map((l) => (
                 <li key={l.href}>
                   <Link
@@ -119,7 +137,14 @@ export default function Footer() {
             >
               Legal
             </h4>
-            <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 10 }}>
+            <ul
+              style={{
+                listStyle: "none",
+                display: "flex",
+                flexDirection: "column",
+                gap: 10,
+              }}
+            >
               {legalLinks.map((l) => (
                 <li key={l.href}>
                   <Link
@@ -178,7 +203,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Sticky. Todos los derechos reservados.
           </p>
           <p style={{ fontSize: 13, color: "#333" }}>
-            Hecho con 🧡 y AI
+            Hecho con tinta naranja🧡.
           </p>
         </div>
       </div>
