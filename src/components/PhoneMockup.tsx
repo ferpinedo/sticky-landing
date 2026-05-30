@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function PhoneMockup() {
   return (
     <div
@@ -51,7 +53,15 @@ export default function PhoneMockup() {
           <div className="wa-screen">
             {/* WA Header */}
             <div className="wa-header">
-              <div className="wa-avatar">🍊</div>
+              <div className="wa-avatar" style={{ padding: 0, overflow: "hidden" }}>
+                <Image
+                  src="/sticky-logo.png"
+                  alt="Sticky"
+                  width={36}
+                  height={36}
+                  style={{ objectFit: "cover", borderRadius: "50%" }}
+                />
+              </div>
               <div style={{ flex: 1 }}>
                 <div className="wa-contact-name">Sticky</div>
                 <div className="wa-contact-status">en línea</div>
