@@ -58,7 +58,7 @@ export default function Business() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex flex-wrap items-center justify-between gap-y-20 md:gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-y-20 md:gap-12">
           {/* Copy */}
           <div style={{ flex: "1 1 min(100%, 580px)" }}>
             <div className="section-tag">Para negocios</div>
@@ -118,7 +118,7 @@ export default function Business() {
                     borderRadius: 12,
                     padding: "14px 18px",
                     display: "flex",
-                    alignItems: "flex-start",
+                    alignItems: "center",
                     gap: 10,
                     height: "100%",
                     minHeight: 104,
@@ -166,8 +166,8 @@ export default function Business() {
               flex: "1 1 300px",
               display: "flex",
               justifyContent: "center",
+              alignItems: "center",
               gap: 16,
-              flexWrap: "wrap",
             }}
           >
             {/* Before */}
