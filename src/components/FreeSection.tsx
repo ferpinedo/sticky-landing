@@ -1,4 +1,13 @@
+import { CheckIcon } from "@heroicons/react/24/solid";
+
 const WA_LINK = "https://wa.me/525586444339?text=Hola";
+
+const featurePills = [
+  "Sin tarjeta de crédito",
+  "Sin registro",
+  "Sin descargar apps",
+  "Directo en WhatsApp",
+];
 
 export default function FreeSection() {
   return (
@@ -108,15 +117,13 @@ export default function FreeSection() {
             marginTop: 36,
           }}
         >
-          {[
-            "✅ Sin tarjeta de crédito",
-            "✅ Sin registro",
-            "✅ Sin descargar apps",
-            "✅ Directo en WhatsApp",
-          ].map((t) => (
+          {featurePills.map((label) => (
             <span
-              key={t}
+              key={label}
               style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 6,
                 fontSize: 13,
                 fontWeight: 600,
                 color: "#888",
@@ -126,7 +133,16 @@ export default function FreeSection() {
                 padding: "6px 14px",
               }}
             >
-              {t}
+              <CheckIcon
+                aria-hidden
+                style={{
+                  width: 14,
+                  height: 14,
+                  flexShrink: 0,
+                  color: "#22C55E",
+                }}
+              />
+              {label}
             </span>
           ))}
         </div>
