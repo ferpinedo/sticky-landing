@@ -5,8 +5,8 @@ const WA_LINK = "https://wa.me/525586444339?text=Hazme%20un%20sticker%20que%20";
 
 const navLinks = [
   { href: "/", label: "Inicio" },
-  { href: "#como-funciona", label: "Cómo funciona" },
-  { href: "#negocios", label: "Para negocios" },
+  { href: "/#como-funciona", label: "Cómo funciona" },
+  { href: "/#negocios", label: "Para negocios" },
   { href: "/contacto", label: "Contacto" },
 ];
 
