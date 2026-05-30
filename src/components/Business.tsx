@@ -1,25 +1,30 @@
 import Image from "next/image";
+import {
+  PaintBrushIcon,
+  ShareIcon,
+  TagIcon,
+} from "@heroicons/react/24/outline";
 
 const WA_LINK =
   "https://wa.me/525586444339?text=Haz%20un%20sticker%20para%20mi%20negocio%20que%20";
 
 const businessCards = [
   {
-    emoji: "🏷️",
+    icon: TagIcon,
     label: "Logo → Sticker",
     desc: "Tu logo convertido en sticker al instante",
   },
   {
-    emoji: "🎨",
+    icon: PaintBrushIcon,
     label: "Reacciones de marca",
     desc: "Stickers con la personalidad de tu negocio",
   },
   {
-    emoji: "📤",
+    icon: ShareIcon,
     label: "Viral en WhatsApp",
     desc: "Tus clientes lo comparten y tu marca viaja",
   },
-];
+] as const;
 
 export default function Business() {
   return (
@@ -47,16 +52,9 @@ export default function Business() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr",
-            gap: 48,
-            alignItems: "center",
-          }}
-        >
+        <div className="flex flex-wrap items-center justify-between gap-y-20 md:gap-12">
           {/* Copy */}
-          <div style={{ maxWidth: 580 }}>
+          <div style={{ flex: "1 1 min(100%, 580px)" }}>
             <div className="section-tag">Para negocios</div>
 
             <h2
@@ -109,9 +107,9 @@ export default function Business() {
                 marginBottom: 36,
               }}
             >
-              {businessCards.map((c, i) => (
+              {businessCards.map(({ icon: Icon, label, desc }) => (
                 <div
-                  key={i}
+                  key={label}
                   style={{
                     background: "#1E1E1E",
                     border: "1px solid #2A2A2A",
@@ -124,7 +122,15 @@ export default function Business() {
                     minWidth: 180,
                   }}
                 >
-                  <span style={{ fontSize: 22 }}>{c.emoji}</span>
+                  <Icon
+                    aria-hidden
+                    style={{
+                      width: 20,
+                      height: 20,
+                      flexShrink: 0,
+                      color: "#FF8100",
+                    }}
+                  />
                   <div>
                     <div
                       style={{
@@ -133,9 +139,9 @@ export default function Business() {
                         color: "#F5F5F5",
                       }}
                     >
-                      {c.label}
+                      {label}
                     </div>
-                    <div style={{ fontSize: 12, color: "#666" }}>{c.desc}</div>
+                    <div style={{ fontSize: 12, color: "#666" }}>{desc}</div>
                   </div>
                 </div>
               ))}
@@ -148,7 +154,6 @@ export default function Business() {
               className="btn-orange"
               style={{ fontSize: 15 }}
             >
-              {/* <span>🏪</span> */}
               Crea un sticker para tu negocio
             </a>
           </div>
@@ -156,6 +161,7 @@ export default function Business() {
           {/* Visual — logo becoming sticker */}
           <div
             style={{
+              flex: "1 1 300px",
               display: "flex",
               justifyContent: "center",
               gap: 16,
