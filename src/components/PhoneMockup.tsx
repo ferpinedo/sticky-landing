@@ -195,7 +195,7 @@ export default function PhoneMockup() {
 
               {/* User reply */}
               <div className="wa-bubble wa-bubble-out bubble-anim">
-                No, está perfecto 🔥
+                ¡Está perfecto!
                 <div className="wa-bubble-time">9:42</div>
               </div>
             </div>

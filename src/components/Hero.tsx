@@ -7,8 +7,8 @@ import {
 import PhoneMockup from "./PhoneMockup";
 
 const featurePills = [
-  { icon: SparklesIcon, label: "AI generativa" },
   { icon: BoltIcon, label: "En segundos" },
+  { icon: SparklesIcon, label: "AI generativa" },
   { icon: DevicePhoneMobileIcon, label: "Solo WhatsApp" },
   { icon: GiftIcon, label: "Sin costo" },
 ] as const;
