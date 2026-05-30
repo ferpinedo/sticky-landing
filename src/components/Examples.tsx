@@ -6,6 +6,7 @@ type Msg =
   | { type: "img-real"; src: string; caption: string }
   | { type: "sticker"; emoji: string }
   | { type: "sticker-img"; src: string; alt: string }
+  | { type: "sticker-img-out"; src: string; alt: string }
   | { type: "sticker-out"; emoji: string }
   | { type: "sticker-labeled"; emoji: string; text: string };
 
@@ -30,12 +31,12 @@ const examples: { label: string; conversation: Msg[] }[] = [
     ],
   },
   {
-    label: "Editar sticker",
+    label: "Agregar texto a sticker",
     conversation: [
-      { type: "out", text: "Hazlo en versión zombie" },
-      { type: "sticker-out", emoji: "😎" },
-      { type: "in", text: "Aquí tu sticker zombie 🧟" },
-      { type: "sticker", emoji: "🧟" },
+      { type: "out", text: 'Ponle "Amo las conchas" a este sticker 🍞' },
+      { type: "sticker-img-out", src: "/stickers/concha.webp", alt: "Concha sticker" },
+      { type: "in", text: "Listo, aquí va con el texto 🧡" },
+      { type: "sticker-img", src: "/stickers/amolasconchas.webp", alt: "Amo las conchas sticker" },
     ],
   },
   {
@@ -96,13 +97,14 @@ function MiniChat({ conversation }: { conversation: Msg[] }) {
         if (msg.type === "sticker-img") {
           return (
             <div key={i} style={{ alignSelf: "flex-start" }}>
-              <Image
-                src={msg.src}
-                alt={msg.alt}
-                width={100}
-                height={100}
-                style={{ filter: "drop-shadow(0 3px 10px rgba(0,0,0,0.6))", display: "block" }}
-              />
+              <Image src={msg.src} alt={msg.alt} width={100} height={100} style={{ filter: "drop-shadow(0 3px 10px rgba(0,0,0,0.6))", display: "block" }} />
+            </div>
+          );
+        }
+        if (msg.type === "sticker-img-out") {
+          return (
+            <div key={i} style={{ alignSelf: "flex-end" }}>
+              <Image src={msg.src} alt={msg.alt} width={100} height={100} style={{ filter: "drop-shadow(0 3px 10px rgba(0,0,0,0.6))", display: "block" }} />
             </div>
           );
         }
