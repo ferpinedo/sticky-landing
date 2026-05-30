@@ -45,7 +45,7 @@ export default function Footer() {
                 alt="Sticky"
                 width={52}
                 height={52}
-                style={{ borderRadius: 12, background: "white" }}
+                style={{ borderRadius: 12 }}
               />
             </Link>
             <p

@@ -41,7 +41,7 @@ export default function Header() {
             width={44}
             height={44}
             priority
-            style={{ borderRadius: 10, background: "white" }}
+            style={{ borderRadius: 10 }}
           />
         </Link>
 
